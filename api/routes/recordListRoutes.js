@@ -2,7 +2,7 @@
 module.exports = function (app) {
     var recordList = require('../controllers/recordListController');
 
-    // todoList Routes
+    // recordList Routes
     app.route('/records')
         .get(recordList.list_all_records)
         .post(recordList.create_a_record);
