@@ -1,0 +1,15 @@
+{
+  "name": "recordListApi",
+  "version": "1.0.0",
+  "description": "A record list API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^5.2.8"
+  },
+  "author": "Bill Burch",
+  "license": "MIT"
+}
