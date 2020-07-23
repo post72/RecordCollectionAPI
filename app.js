@@ -5,9 +5,11 @@ var express = require('express'),
     Record = require('./api/models/recordListModel'), //created model loading here
     bodyParser = require('body-parser');
 
+var mongoConnectStr = 'mongodb://localhost/test';
+
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect(mongoConnectStr, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
