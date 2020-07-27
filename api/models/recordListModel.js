@@ -15,6 +15,7 @@ var RecordSchema = new Schema({
     album: {
         title: {type: String, default: ''},
         composer: { type: String, default: '' },
+        producer: { type: String, default: '' },
         year: { type: String, default: '' },
         label: { type: String, default: '' },
         trackCount: { type: Number, default: 1 },
