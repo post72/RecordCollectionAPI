@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "express": "^4.13.4",
-    "mongoose": "^5.2.8"
+    "mongoose": "^5.2.8",
+    "mquery": "3.2.3"
   },
   "author": "Bill Burch",
   "license": "MIT"
