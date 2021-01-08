@@ -1,5 +1,5 @@
 {
-  "name": "recordListApi",
+  "name": "record-list-api",
   "version": "1.0.0",
   "description": "A record list API",
   "main": "app.js",
