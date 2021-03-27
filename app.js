@@ -2,7 +2,7 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 8008,
     mongoose = require('mongoose'),
-    Record = require('./api/models/recordListModel'), //created model loading here
+    Record = require('./api/models/recordModel'), //created model loading here
     bodyParser = require('body-parser');
 
 var mongoConnectStr = 'mongodb://localhost/test';
@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-var routes = require('./api/routes/recordListRoutes'); //importing route
+var routes = require('./api/routes/commonApiRoutes'); //importing route
 routes(app); //register the route
 
 // App Error Middlewear
@@ -28,4 +28,4 @@ app.use(function (req, res) {
 app.listen(port);
 
 
-console.log('a record list RESTful API server started on: ' + port);
+console.log('A music record catalogue RESTful API server started on: ' + port);
