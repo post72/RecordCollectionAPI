@@ -1,6 +1,5 @@
 'use strict';
 
-
 var mongoose = require('mongoose'),
     Record = mongoose.model('Records');
 
@@ -11,8 +10,6 @@ exports.list_all_records = function (req, res) {
         res.json(record);
     });
 };
-
-
 
 
 exports.create_a_record = function (req, res) {
@@ -44,8 +41,6 @@ exports.update_a_record = function (req, res) {
 
 
 exports.delete_a_record = function (req, res) {
-
-
     Record.remove({
         _id: req.params.recordId
     }, function (err, record) {
