@@ -2,6 +2,7 @@ node_modules
 dev_conf.js
 .eslintrc.js
 local_config.md
+.env
 # Compiled source #
 ###################
 *.com
