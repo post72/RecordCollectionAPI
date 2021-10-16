@@ -3,6 +3,7 @@ dev_conf.js
 .eslintrc.js
 local_config.md
 .env
+.nvmrc
 # Compiled source #
 ###################
 *.com
