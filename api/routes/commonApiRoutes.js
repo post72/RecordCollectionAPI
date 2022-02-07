@@ -1,6 +1,18 @@
 'use strict';
+
 module.exports = function (app) {
     var recordData = require('../controllers/recordController');
+    var publicData = require('../controllers/publicController');
+
+    // OPEN Routes
+    app.route('/')
+        .get(publicData.index);
+
+    app.route('/public')
+        .get(publicData.public);
+
+    app.route("/private")
+        .get(publicData.private);
 
     // recordList Routes
     app.route('/records')

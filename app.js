@@ -32,7 +32,6 @@ app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
 const routes = require('./api/routes/commonApiRoutes'); //importing route
 routes(app); //register the route
 
