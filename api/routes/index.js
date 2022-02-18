@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const publicData = require("../controllers/publicController");
+const publicData = require("../controllers/indexController");
 
 router.get('/', publicData.index);
 router.use('/ping', publicData.ping);

@@ -4,7 +4,7 @@ const helmet = require("helmet"); // Require helmet for setting http headers
 const mongoose = require('mongoose'); // Require Mongoose - MongoDB schema /model validation library
 const Record = require('./api/models/recordModel'); // created model loading here
 const PORT = process.env.PORT || 8008; // create PORT from .env or use 8008
-const publicRoutes = require("./api/routes/public");
+const publicRoutes = require('./api/routes/index');
 const recordRoutes = require('./api/routes/records');
 
 // create the MongoDB connection string from .env value or use mongodb://localhost/test (stand alone local database)
