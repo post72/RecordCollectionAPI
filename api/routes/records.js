@@ -17,6 +17,9 @@ jwtCheck = jwt({
     algorithms: ["RS256"],
 });
 
+// NO JWT CHECK FOR THIS ROUTE
+router.get("/all", recordData.list_all_records);
+// ROUTES ARE PROTECTED WITH JWT CHECK
 router.get("/", jwtCheck, recordData.list_all_records);
 router.post("/", jwtCheck, recordData.create_a_record);
 router.get("/:recordId", jwtCheck, recordData.read_a_record);
