@@ -54,12 +54,11 @@ var RecordSchema = new Schema({
     type: Number,
     default: 1,
   },
-  album_track_list: {
+  album_track_list: [
     /* The track names on the Album */
 
-    type: Array,
-    default: "",
-  },
+    { type: String },
+  ],
   album_cover_image: {
     /* The Album cover image */
 
